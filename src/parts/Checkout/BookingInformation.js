@@ -40,6 +40,7 @@ export default function BookingInformation(props) {
               </div>
             </Fade>
           </div>
+
           <div className="col-5 py-5" style={{ paddingLeft: 80 }}>
             <Fade delay={600}>
               <label htmlFor="firstName">First Name</label>

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+
 import propTypes from "prop-types";
 
 import "./index.scss";
@@ -50,11 +51,11 @@ export default function File(props) {
   );
 }
 
-File.defaultProps = {
+Text.defaultProps = {
   placeholder: "Browse a file...",
 };
 
-File.propTypes = {
+Text.propTypes = {
   name: propTypes.string.isRequired,
   accept: propTypes.string.isRequired,
   value: propTypes.string.isRequired,

@@ -6,7 +6,7 @@ import Button from "elements/Button";
 import "./index.scss";
 
 export default function Breadcrumb(props) {
-  const className = ["breadcrumb", props.className];
+  const className = ["breadcrumb"];
   return (
     <nav aria-label="breadcrumb">
       <ol className={className.join(" ")}>
@@ -35,5 +35,5 @@ export default function Breadcrumb(props) {
 
 Breadcrumb.propTypes = {
   data: propTypes.array,
-  className: propTypes.string
+  className: propTypes.string,
 };

@@ -13,12 +13,12 @@ export default function MostPicked(props) {
             return (
               <div
                 key={`mostpicked-${index}`}
-                className={`item column-4${index === 0 ? " row-2" : " row-1"}`}
+                className={`item column-4 ${index === 0 ? "row-2" : "row-1"}`}
               >
                 <Fade bottom delay={500 * index}>
                   <div className="card card-featured">
                     <div className="tag">
-                      ${item.price}
+                      ${item.price}{" "}
                       <span className="font-weight-light">per {item.unit}</span>
                     </div>
                     <figure className="img-wrapper">

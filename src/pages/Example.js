@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 
 import Breadcrumb from "elements/Breadcrumb";
-
 export default class Example extends Component {
   render() {
     const breadcrumb = [
       { pageTitle: "Home", pageHref: "" },
-      { pageTitle: "House Details", pageHref: "" }
+      { pageTitle: "House Details", pageHref: "" },
     ];
 
     return (

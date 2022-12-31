@@ -16,7 +16,7 @@ export default function Header(props) {
           <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light">
               <Button className="brand-text-icon mx-auto" href="" type="link">
-                Bag<span className="text-gray-900">endit.</span>
+                Stay<span className="text-gray-900">cation.</span>
               </Button>
             </nav>
           </div>
@@ -38,8 +38,8 @@ export default function Header(props) {
                   </Button>
                 </li>
                 <li className={`nav-item${getNavLinkClass("/browse-by")}`}>
-                  <Button className="nav-link" type="link" href="/browse-by">
-                    Browse By
+                  <Button className="nav-link" type="link" href="browse-by">
+                    Browse by
                   </Button>
                 </li>
                 <li className={`nav-item${getNavLinkClass("/stories")}`}>

@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Breadcrumb from "./index";
 import { BrowserRouter as Router } from "react-router-dom";
+import Breadcrumb from "./index";
 
 const setup = () => {
   const breadcrumbList = [
     { pageTitle: "Home", pageHref: "" },
-    { pageTitle: "House Details", pageHref: "" }
+    { pageTitle: "House Details", pageHref: "" },
   ];
   const { container } = render(
     <Router>
@@ -16,11 +16,11 @@ const setup = () => {
   const breadcrumb = container.querySelector(`.breadcrumb`);
 
   return {
-    breadcrumb
+    breadcrumb,
   };
 };
 
-test("Should have <ol> with className .breadcrumb and have text Home & House Details", () => {
+test("Should have tag <ol> with className .breadcrumb and have text Home & House Details", () => {
   const { breadcrumb } = setup();
 
   expect(breadcrumb).toBeInTheDocument();

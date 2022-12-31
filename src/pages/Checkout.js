@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 
-import Header from "parts/Header";
 import Button from "elements/Button";
 import Stepper, {
   Numbering,
@@ -10,6 +9,7 @@ import Stepper, {
   Controller,
 } from "elements/Stepper";
 
+import Header from "parts/Header";
 import BookingInformation from "parts/Checkout/BookingInformation";
 import Payment from "parts/Checkout/Payment";
 import Completed from "parts/Checkout/Completed";
@@ -39,7 +39,7 @@ export default class Checkout extends Component {
   };
 
   componentDidMount() {
-    window.scroll(0, 0);
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -62,18 +62,20 @@ export default class Checkout extends Component {
           />
         ),
       },
+
       payment: {
         title: "Payment",
-        description: "Kindly follow the instructions below",
+        description: "Kindly Follow the instructions below",
         content: (
           <Payment
             data={data}
-            ItemDetails={ItemDetails}
             checkout={checkout}
+            ItemDetails={ItemDetails}
             onChange={this.onChange}
           />
         ),
       },
+
       completed: {
         title: "Yay! Completed",
         description: null,
@@ -167,7 +169,8 @@ export default class Checkout extends Component {
                     isBlock
                     isPrimary
                     hasShadow
-                    href=""
+                    href="/"
+                    style={{ paddingTop: 10 }}
                   >
                     Back to Home
                   </Button>

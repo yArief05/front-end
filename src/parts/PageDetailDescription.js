@@ -1,6 +1,7 @@
 import React from "react";
 
 import ReactHtmlParser from "react-html-parser";
+
 export default function PageDetailDescription({ data }) {
   return (
     <main>
@@ -19,7 +20,7 @@ export default function PageDetailDescription({ data }) {
                 className="d-block mb-2"
                 src={feature.imageUrl}
                 alt={feature.name}
-              />{" "}
+              />
               <span>{feature.qty}</span>{" "}
               <span className="text-gray-500 font-weight-light">
                 {feature.name}

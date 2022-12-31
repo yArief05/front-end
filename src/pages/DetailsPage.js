@@ -21,7 +21,7 @@ export default class DetailsPage extends Component {
   render() {
     const breadcrumb = [
       { pageTitle: "Home", pageHref: "" },
-      { pageTitle: "House Details", pageHref: "" }
+      { pageTitle: "House Details", pageHref: "" },
     ];
 
     return (
@@ -32,7 +32,7 @@ export default class DetailsPage extends Component {
         <section className="container">
           <div className="row">
             <div className="col-7 pr-5">
-              <Fade bottom>
+              <Fade delay={200}>
                 <PageDetailDescription data={ItemDetails} />
               </Fade>
             </div>
@@ -43,10 +43,8 @@ export default class DetailsPage extends Component {
             </div>
           </div>
         </section>
-
         <Categories data={ItemDetails.categories} />
         <Testimony data={ItemDetails.testimonial} />
-
         <Footer />
       </>
     );

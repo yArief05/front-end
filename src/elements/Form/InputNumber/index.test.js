@@ -4,10 +4,10 @@ import InputNumber from "./index";
 
 class TestInput extends React.Component {
   state = {
-    value: ""
+    value: "",
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
@@ -25,10 +25,10 @@ class TestInput extends React.Component {
 
 const setup = () => {
   const { container } = render(<TestInput />);
-  const input = container.querySelector(`input.form-control[name='value']`);
+  const input = container.querySelector(`input.form-control[name="value"]`);
 
   return {
-    input
+    input,
   };
 };
 

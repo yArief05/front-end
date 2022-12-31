@@ -1,6 +1,6 @@
 {
   "_id": "asd1293uasdads1",
-  "name": "Village Angga",
+  "name": "Village Putra Randi",
   "type": "Hotel",
   "imageUrls": [
     {
@@ -17,7 +17,7 @@
     }
   ],
   "country": "Indonesia",
-  "city": "Bogor",
+  "city": "Malang",
   "price": "52",
   "unit": "night",
   "isPopular": true,
@@ -76,64 +76,64 @@
   "activities": [
     {
       "_id": "asd1293uasdads1",
-      "name": "Kebun Park",
+      "name": "Danau Park",
       "type": "Nature",
       "imageUrl": "/images/categoryItem1.png"
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Water land",
+      "name": "Water Club",
       "type": "Pool",
       "imageUrl": "/images/categoryItem2.png"
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Kebun Park",
+      "name": "Labour and wait",
       "type": "Nature",
       "imageUrl": "/images/categoryItem3.png"
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Water land",
-      "type": "Pool",
+      "name": "Snorkeling",
+      "type": "Beach",
       "imageUrl": "/images/categoryItem4.png"
     }
   ],
   "categories": [
     {
       "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
+      "name": "Treasure to Choose",
       "items": [
         {
           "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
+          "name": "Greenland",
           "imageUrl": "/images/treasure-1.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Indonesia",
+          "city": "Malang",
           "isPopular": false
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
+          "name": "Pool Party",
           "imageUrl": "/images/treasure-2.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Indonesia",
+          "city": "Malang",
           "isPopular": false
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
+          "name": "Labour and wait",
           "imageUrl": "/images/treasure-3.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Indonesia",
+          "city": "Malang",
           "isPopular": true
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
+          "name": "Snorkeling",
           "imageUrl": "/images/treasure-4.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Indonesia",
+          "city": "Malang",
           "isPopular": false
         }
       ]
@@ -145,7 +145,7 @@
     "name": "Happy Family",
     "rate": 4.25,
     "content": "What a great trip with my family and I should try again and again next time soon...",
-    "familyName": "Angga",
-    "familyOccupation": "UI Designer"
+    "familyName": "Randi",
+    "familyOccupation": "Software Engineer"
   }
 }

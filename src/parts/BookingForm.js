@@ -14,19 +14,19 @@ export default class BookingForm extends Component {
         date: {
           startDate: new Date(),
           endDate: new Date(),
-          key: "selection"
-        }
-      }
+          key: "selection",
+        },
+      },
     };
   }
 
-  updateData = e => {
+  updateData = (e) => {
     this.setState({
       ...this.state,
       data: {
         ...this.state.data,
-        [e.target.name]: e.target.value
-      }
+        [e.target.name]: e.target.value,
+      },
     });
   };
 
@@ -37,11 +37,12 @@ export default class BookingForm extends Component {
       const startDate = new Date(data.date.startDate);
       const endDate = new Date(data.date.endDate);
       const countDuration = new Date(endDate - startDate).getDate();
+
       this.setState({
         data: {
           ...this.state.data,
-          duration: countDuration
-        }
+          duration: countDuration,
+        },
       });
     }
 
@@ -50,15 +51,16 @@ export default class BookingForm extends Component {
       const endDate = new Date(
         startDate.setDate(startDate.getDate() + +data.duration - 1)
       );
+
       this.setState({
         ...this.state,
         data: {
           ...this.state.data,
           date: {
             ...this.state.data.date,
-            endDate: endDate
-          }
-        }
+            endDate: endDate,
+          },
+        },
       });
     }
   }
@@ -104,12 +106,24 @@ export default class BookingForm extends Component {
           </span>
         </h6>
 
-        <Button
+        {/* <Button
           className="btn"
           hasShadow
           isPrimary
           isBlock
           onClick={startBooking}
+        >
+          Continue to Book
+        </Button> */}
+        <Button
+          className="btn"
+          type="link"
+          isBlock
+          isPrimary
+          hasShadow
+          onClick={startBooking}
+          href="/checkout"
+          style={{ paddingTop: 10 }}
         >
           Continue to Book
         </Button>
@@ -120,5 +134,5 @@ export default class BookingForm extends Component {
 
 BookingForm.propTypes = {
   itemDetails: propTypes.object,
-  startBooking: propTypes.func
+  startBooking: propTypes.func,
 };

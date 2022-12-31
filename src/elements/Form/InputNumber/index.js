@@ -3,7 +3,6 @@ import React from "react";
 import propTypes from "prop-types";
 
 import "./index.scss";
-
 export default function Number(props) {
   const {
     value,
@@ -13,16 +12,18 @@ export default function Number(props) {
     max,
     prefix,
     suffix,
-    isSuffixPlural
+    isSuffixPlural,
   } = props;
-  const onChange = e => {
+
+  const onChange = (e) => {
     let value = String(e.target.value);
+
     if (+value <= max && +value >= min) {
       props.onChange({
         target: {
           name: name,
-          value: +value
-        }
+          value: +value,
+        },
       });
     }
   };
@@ -32,8 +33,8 @@ export default function Number(props) {
       onChange({
         target: {
           name: name,
-          value: +value - 1
-        }
+          value: +value - 1,
+        },
       });
   };
 
@@ -42,15 +43,15 @@ export default function Number(props) {
       onChange({
         target: {
           name: name,
-          value: +value + 1
-        }
+          value: +value + 1,
+        },
       });
   };
 
   return (
     <div className={["input-number mb-3", props.outerClassName].join(" ")}>
       <div className="input-group">
-        <div className="input-group-prepend ">
+        <div className="input-group-prepend">
           <span className="input-group-text minus" onClick={minus}>
             -
           </span>
@@ -60,6 +61,7 @@ export default function Number(props) {
           max={max}
           name={name}
           readOnly
+          pattern="[0-9]*"
           className="form-control"
           placeholder={placeholder ? placeholder : "0"}
           value={`${prefix}${value}${suffix}${
@@ -81,7 +83,7 @@ Number.defaultProps = {
   min: 1,
   max: 1,
   prefix: "",
-  suffix: ""
+  suffix: "",
 };
 
 Number.propTypes = {
@@ -89,5 +91,5 @@ Number.propTypes = {
   onChange: propTypes.func,
   isSuffixPlural: propTypes.bool,
   placeholder: propTypes.string,
-  outerClassName: propTypes.string
+  outerClassName: propTypes.string,
 };

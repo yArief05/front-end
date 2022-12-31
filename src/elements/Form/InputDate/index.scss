@@ -1,7 +1,9 @@
 @import "../../../assets/scss/colorVariables";
+
 .input-date {
   .input-group {
     background-color: $white;
+
     .input-group-text {
       pointer-events: none;
       border: 0;
@@ -16,6 +18,7 @@
       position: absolute;
       z-index: 999;
     }
+
     .form-control {
       border: 0;
       border-radius: 0;

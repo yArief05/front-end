@@ -1,17 +1,17 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import TestimonyAccent from "assets/images/testimonial-landingpages-frame.jpg";
+import TestimonyAccent from "assets/images/picture/testimonial-landingpage-frame.jpg";
 
-import Star from "elements/Star";
 import Button from "elements/Button";
+import Star from "elements/Star";
 
 export default function Testimony({ data }) {
   return (
-    <Fade bottom>
+    <Fade bottom delay={500}>
       <section className="container">
         <div className="row align-items-center">
-          <div className="col-auto" style={{ marginRight: 60 }}>
+          <div className="col-auto" style={{ marginRight: 70 }}>
             <div
               className="testimonial-hero"
               style={{ margin: `30px 0 0 30px` }}
@@ -39,13 +39,12 @@ export default function Testimony({ data }) {
             <span className="text-gray-500">
               {data.familyName}, {data.familyOccupation}
             </span>
-
             <div>
               <Button
                 className="btn px-5"
                 style={{ marginTop: 40 }}
-                hasShadow
                 isPrimary
+                hasShadow
                 type="link"
                 href={`/testimonial/${data._id}`}
               >
